@@ -62,9 +62,8 @@ instalar_pacotes() {
 instalar_pacotes_deb() {
     cd /home/jonas/Downloads
     local pacotes_deb=(
+        "https://files2.freedownloadmanager.org/6/latest/freedownloadmanager.deb"
         "https://github.com/fastfetch-cli/fastfetch/releases/download/2.23.0/fastfetch-linux-amd64.deb"
-        "https://launchpad.net/veracrypt/trunk/1.26.14/+download/veracrypt-1.26.14-Debian-12-amd64.deb"
-        "https://download.onlyoffice.com/install/desktop/editors/linux/onlyoffice-desktopeditors_amd64.deb"
     )
     for pacote in "${pacotes_deb[@]}"; do
         wget "$pacote"
